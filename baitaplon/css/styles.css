@@ -825,6 +825,84 @@ h2 {
     margin-top: 10px;
   }
 }
+
+/* order */
+.order-success {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #28a745;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.order-details,
+.order-info {
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-item p {
+  font-size: 1.1rem;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.total-price {
+  color: #28a745;
+}
+
+/* Order Info Section */
+.order-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.order-info strong {
+  font-weight: bold;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.back-btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #28a745;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
 /* contact */
 
 .contact-info {
