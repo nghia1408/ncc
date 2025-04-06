@@ -690,84 +690,140 @@ ul {
 
 /* payment */
 
+/* Headings */
 h2 {
   text-align: center;
-  color: black;
-  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
+/* Customer Information */
 .customer-info,
 .payment-method,
 .cart {
   border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
+/* Input Groups */
 .input-group {
   display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"] {
-  width: 100%;
-  padding: 8px;
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="date"] {
+  width: 48%;
+  padding: 12px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group input[type="date"]:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+  outline: none;
+}
+
+/* Payment Method */
 .payment-method label {
   display: block;
-  margin: 5px 0;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #555;
 }
 
+.payment-method input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Cart Items */
 .cart-item,
 .cart-total {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
   border-bottom: 1px solid #ddd;
-  padding: 5px 0;
+}
+
+.cart-item p,
+.cart-total p {
+  font-size: 1.2rem;
+  color: #333;
 }
 
 .cart-total .total-price {
   font-weight: bold;
-  color: black;
+  color: #28a745;
+  font-size: 1.4rem;
 }
 
+.cart-total p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Action Buttons */
 .actions {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .back-btn,
 .order-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #28a745;
   text-align: center;
-  text-decoration: none; /* Xóa gạch chân */
+  text-decoration: none;
   cursor: pointer;
   border: none;
-}
-
-.back-btn {
-  background-color: #28a745;
-  color: white;
-}
-
-.order-btn {
-  background-color: #28a745;
-  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .back-btn:hover,
 .order-btn:hover {
-  opacity: 0.8;
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group input[type="date"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back-btn,
+  .order-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 /* contact */
 
