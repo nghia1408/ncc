@@ -82,54 +82,135 @@
     </nav>
 
     <div class="container">
-      <!-- Thông tin khách hàng -->
-      <div class="customer-info">
-        <h2>Thông tin khách hàng</h2>
-        <div class="input-group">
-          <input type="text" placeholder="Họ và tên" />
-          <input type="text" placeholder="Địa chỉ" />
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="SĐT" />
-          <input type="date" placeholder="Ngày sinh" />
-        </div>
-        <input type="email" placeholder="Email" />
-      </div>
+      <div class="checkout-container">
+        <div class="billing-details-section">
+          <h2>Thông Tin Thanh Toán</h2>
+          <form>
+            <label for="billing-first-name">Họ và Tên*</label>
+            <input
+              type="text"
+              id="billing-first-name"
+              name="billing-first-name"
+              required
+            />
 
-      <!-- Phương thức thanh toán -->
-      <div class="payment-method">
-        <h2>Phương thức thanh toán</h2>
-        <label
-          ><input type="radio" name="payment" /> Thanh toán bằng tiền mặt</label
-        >
-        <label
-          ><input type="radio" name="payment" /> Chuyển khoản qua ngân
-          hàng</label
-        >
-        <label><input type="radio" name="payment" /> Ship COD</label>
-      </div>
+            <label for="billing-company-name">Tên Công Ty</label>
+            <input
+              type="text"
+              id="billing-company-name"
+              name="billing-company-name"
+            />
 
-      <!-- Giỏ hàng -->
-      <div class="cart">
-        <h2>Giỏ hàng</h2>
-        <div class="cart-item">
-          <p><strong>Apple Ipad 4 Wifi 16GB</strong></p>
-          <p>23.600.000</p>
-        </div>
-        <div class="cart-item">
-          <p><strong>Apple iPhone 5 16GB White</strong></p>
-          <p>119.920.000</p>
-        </div>
-        <div class="cart-total">
-          <p><strong>Tổng thành tiền</strong></p>
-          <p class="total-price">143.520.000</p>
-        </div>
-      </div>
+            <label for="billing-street-address">Địa Chỉ*</label>
+            <input
+              type="text"
+              id="billing-street-address"
+              name="billing-street-address"
+              required
+            />
 
-      <!-- Nút hành động -->
-      <div class="actions">
-        <a href="index.html" class="back-btn">Trở về</a>
-        <a href="order.html" class="order-btn">Đặt hàng</a>
+            <label for="billing-apartment">Căn Hộ, Tầng, v.v. (tùy chọn)</label>
+            <input
+              type="text"
+              id="billing-apartment"
+              name="billing-apartment"
+            />
+
+            <label for="billing-town-city">Thành Phố*</label>
+            <input
+              type="text"
+              id="billing-town-city"
+              name="billing-town-city"
+              required
+            />
+
+            <label for="billing-phone-number">Số Điện Thoại*</label>
+            <input
+              type="tel"
+              id="billing-phone-number"
+              name="billing-phone-number"
+              required
+            />
+
+            <label for="billing-email-address">Email*</label>
+            <input
+              type="email"
+              id="billing-email-address"
+              name="billing-email-address"
+              required
+            />
+
+            <label>
+              <input
+                type="checkbox"
+                id="billing-save-info"
+                name="billing-save-info"
+              />
+              Lưu thông tin này để thanh toán nhanh hơn lần sau
+            </label>
+          </form>
+        </div>
+
+        <div class="order-summary-section">
+          <h2>Tổng Quan Đơn Hàng</h2>
+
+          <!-- Sản phẩm Màn Hình LCD -->
+          <div class="order-product">
+            <img
+              src="./image/items/item-1.png"
+              alt="Màn Hình LCD"
+              class="order-product-image"
+            />
+            <span>Màn Hình LCD</span>
+            <span>₫14,550,000</span>
+          </div>
+
+          <!-- Sản phẩm Gamepad H1 -->
+          <div class="order-product">
+            <img
+              src="./image/items/item-2.png"
+              alt="Gamepad H1"
+              class="order-product-image"
+            />
+            <span>Gamepad H1</span>
+            <span>₫24,300,000</span>
+          </div>
+
+          <div class="order-subtotal">
+            <span>Tổng phụ</span>
+            <span>₫38,850,000</span>
+          </div>
+          <div class="order-shipping">
+            <span>Vận Chuyển</span>
+            <span>Miễn Phí</span>
+          </div>
+          <div class="order-total">
+            <span>Tổng Cộng</span>
+            <span>₫38,850,000</span>
+          </div>
+
+          <div class="payment-methods-section">
+            <label>
+              <input type="radio" name="payment-method" value="bank" />
+              Chuyển Khoản Ngân Hàng
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="payment-method"
+                value="cash-on-delivery"
+              />
+              Thanh Toán Khi Nhận Hàng
+            </label>
+          </div>
+
+          <div class="coupon-section">
+            <input type="text" placeholder="Mã Giảm Giá" />
+            <button type="button">Áp Dụng Mã Giảm Giá</button>
+          </div>
+
+          <button class="place-order-button">Đặt Hàng</button>
+        </div>
       </div>
     </div>
 
@@ -163,9 +244,7 @@
       </div>
       <div class="footer_bottom">
         <div class="container footer_bottom_container">
-          <p class="footer_copy">
-            Copyright Casafine 2025. All right reserved
-          </p>
+          <p class="footer_copy">Copyright Casafine 2025. All right reserved</p>
         </div>
       </div>
     </footer>
