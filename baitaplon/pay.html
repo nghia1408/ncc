@@ -89,7 +89,7 @@
         <div class="billing-details-section">
           <h2>Thông Tin Thanh Toán</h2>
           <form>
-            <label for="billing-first-name">Họ và Tên*</label>
+            <label for="billing-first-name">Họ và Tên</label>
             <input
               type="text"
               id="billing-first-name"
@@ -97,29 +97,7 @@
               required
             />
 
-            <label for="billing-company-name">Tên Công Ty</label>
-            <input
-              type="text"
-              id="billing-company-name"
-              name="billing-company-name"
-            />
-
-            <label for="billing-street-address">Địa Chỉ*</label>
-            <input
-              type="text"
-              id="billing-street-address"
-              name="billing-street-address"
-              required
-            />
-
-            <label for="billing-apartment">Căn Hộ, Tầng, v.v. (tùy chọn)</label>
-            <input
-              type="text"
-              id="billing-apartment"
-              name="billing-apartment"
-            />
-
-            <label for="billing-town-city">Thành Phố*</label>
+            <label for="billing-town-city">Tỉnh / Thành Phố</label>
             <input
               type="text"
               id="billing-town-city"
@@ -127,15 +105,30 @@
               required
             />
 
-            <label for="billing-phone-number">Số Điện Thoại*</label>
+            <label for="billing-apartment">Quận / Huyện</label>
             <input
-              type="tel"
+              type="text"
+              id="billing-apartment"
+              name="billing-apartment"
+            />
+
+            <label for="billing-street-address">Địa Chỉ</label>
+            <input
+              type="text"
+              id="billing-street-address"
+              name="billing-street-address"
+              required
+            />
+
+            <label for="billing-phone-number">Số Điện Thoại</label>
+            <input
+              type="text"
               id="billing-phone-number"
               name="billing-phone-number"
               required
             />
 
-            <label for="billing-email-address">Email*</label>
+            <label for="billing-email-address">Email</label>
             <input
               type="email"
               id="billing-email-address"

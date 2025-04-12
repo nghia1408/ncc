@@ -705,20 +705,23 @@ ul {
 
 .billing-details-section h2 {
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .billing-details-section label {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px; /* Increased margin for more space */
   display: block;
+  font-size: 16px;
 }
 
 .billing-details-section input {
   width: 100%;
-  padding: 10px;
-  margin: 5px 0 15px;
+  padding: 12px; /* Increased padding for more space */
+  margin: 8px 0 18px; /* Increased margin for more space between inputs */
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .billing-details-section input[type="checkbox"] {
@@ -736,6 +739,7 @@ ul {
 
 .order-summary-section h2 {
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .order-product,
@@ -744,34 +748,37 @@ ul {
 .order-total {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 15px 0; /* Increased margin for more space */
 }
 
 .payment-methods-section label {
   display: block;
-  margin: 5px 0;
+  margin: 10px 0; /* Added margin for more space */
+  font-size: 16px;
 }
 
 .coupon-section {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 25px 0; /* Increased margin for more space */
 }
 
 .coupon-section input {
   width: 70%;
-  padding: 10px;
+  padding: 12px; /* Increased padding for more space */
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .coupon-section button {
-  padding: 10px 20px;
+  padding: 12px 22px; /* Increased padding for better button size */
   background-color: #e74c3c;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .coupon-section button:hover {
@@ -787,6 +794,7 @@ ul {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  text-align: center;
 }
 
 .place-order-button:hover {
@@ -798,13 +806,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 15px 0; /* Increased margin for more space */
 }
 
 .order-product img {
   width: 50px;
   height: auto;
-  margin-right: 15px;
+  margin-right: 20px; /* Increased space between image and text */
 }
 
 .order-product span {
@@ -812,8 +820,8 @@ ul {
 }
 
 .place-order-button a {
-  color: inherit; /* Dùng màu chữ của button */
-  text-decoration: none; /* Xóa gạch chân */
+  color: inherit; /* Use button text color */
+  text-decoration: none; /* Remove underline */
 }
 
 /* Cart Items */
