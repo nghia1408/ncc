@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Cart - Exclusive E-Commerce Website</title>
+    <title>Home - Exclusive E-Commerce Website</title>
   </head>
   <body>
     <div class="top_nav">
@@ -42,6 +42,9 @@
           <a href="/cart.html">
             <img src="./image/cart.png" alt="" class="nav_cart" />
           </a>
+          <a href="/account.html">
+            <img src="./image/icons/avata1.png" alt="" class="nav_cart" />
+          </a>
         </div>
         <span class="hamburger">
           <svg
@@ -61,6 +64,7 @@
         </span>
       </div>
     </nav>
+    <!--  -->
     <nav class="mobile_nav mobile_nav_hide">
       <ul class="mobile_nav_list">
         <li class="mobile_nav_item">
@@ -70,151 +74,105 @@
           <a href="#" class="mobile_nav_link">About</a>
         </li>
         <li class="mobile_nav_item">
-          <a href="#" class="mobile_nav_link">Contact</a>
+          <a href="contact.html" class="mobile_nav_link">Contact</a>
         </li>
         <li class="mobile_nav_item">
-          <a href="./sign-up.html" class="mobile_nav_link">Sign Up</a>
+          <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
         </li>
         <li class="mobile_nav_item">
-          <a href="/cart.html" class="mobile_nav_link">Cart</a>
+          <a href="./cart.html" class="mobile_nav_link">Cart</a>
         </li>
       </ul>
     </nav>
 
-    <div class="container">
-      <div class="checkout-container">
-        <div class="billing-details-section">
-          <h2>Thông Tin Thanh Toán</h2>
-          <form>
-            <label for="billing-first-name">Họ và Tên*</label>
-            <input
-              type="text"
-              id="billing-first-name"
-              name="billing-first-name"
-              required
-            />
+    <!--  -->
 
-            <label for="billing-company-name">Tên Công Ty</label>
-            <input
-              type="text"
-              id="billing-company-name"
-              name="billing-company-name"
-            />
-
-            <label for="billing-street-address">Địa Chỉ*</label>
-            <input
-              type="text"
-              id="billing-street-address"
-              name="billing-street-address"
-              required
-            />
-
-            <label for="billing-apartment">Căn Hộ, Tầng, v.v. (tùy chọn)</label>
-            <input
-              type="text"
-              id="billing-apartment"
-              name="billing-apartment"
-            />
-
-            <label for="billing-town-city">Thành Phố*</label>
-            <input
-              type="text"
-              id="billing-town-city"
-              name="billing-town-city"
-              required
-            />
-
-            <label for="billing-phone-number">Số Điện Thoại*</label>
-            <input
-              type="tel"
-              id="billing-phone-number"
-              name="billing-phone-number"
-              required
-            />
-
-            <label for="billing-email-address">Email*</label>
-            <input
-              type="email"
-              id="billing-email-address"
-              name="billing-email-address"
-              required
-            />
-
-            <label>
-              <input
-                type="checkbox"
-                id="billing-save-info"
-                name="billing-save-info"
-              />
-              Lưu thông tin này để thanh toán nhanh hơn lần sau
-            </label>
-          </form>
+    <div class="account-container">
+      <div class="sidebar">
+        <h3>Manage My Account</h3>
+        <ul>
+          <li><a href="profile.html">My Profile</a></li>
+          <li><a href="address.html">Address Book</a></li>
+          <li><a href="payment.html">My Payment Options</a></li>
+        </ul>
+        <h3>My Orders</h3>
+        <ul>
+          <li><a href="returns.html">My Returns</a></li>
+          <li><a href="cancellations.html">My Cancellations</a></li>
+        </ul>
+        <h3>My WishList</h3>
+      </div>
+      <div class="main-content">
+        <div class="welcome-message">
+          <h1>Welcome! Md Rimel</h1>
         </div>
-
-        <div class="order-summary-section">
-          <h2>Tổng Quan Đơn Hàng</h2>
-
-          <!-- Sản phẩm Màn Hình LCD -->
-          <div class="order-product">
-            <img
-              src="./image/items/item-1.png"
-              alt="Màn Hình LCD"
-              class="order-product-image"
-            />
-            <span>Màn Hình LCD</span>
-            <span>₫14,550,000</span>
-          </div>
-
-          <!-- Sản phẩm Gamepad H1 -->
-          <div class="order-product">
-            <img
-              src="./image/items/item-2.png"
-              alt="Gamepad H1"
-              class="order-product-image"
-            />
-            <span>Gamepad H1</span>
-            <span>₫24,300,000</span>
-          </div>
-
-          <div class="order-subtotal">
-            <span>Tổng phụ</span>
-            <span>₫38,850,000</span>
-          </div>
-          <div class="order-shipping">
-            <span>Vận Chuyển</span>
-            <span>Miễn Phí</span>
-          </div>
-          <div class="order-total">
-            <span>Tổng Cộng</span>
-            <span>₫38,850,000</span>
-          </div>
-
-          <div class="payment-methods-section">
-            <label>
-              <input type="radio" name="payment-method" value="bank" />
-              Chuyển Khoản Ngân Hàng
-            </label>
-            <label>
+        <div class="profile-form">
+          <h2>Edit Your Profile</h2>
+          <form action="#">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" value="Md" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
               <input
-                type="radio"
-                name="payment-method"
-                value="cash-on-delivery"
+                type="text"
+                id="last-name"
+                name="last-name"
+                value="Rimel"
               />
-              Thanh Toán Khi Nhận Hàng
-            </label>
-          </div>
-
-          <div class="coupon-section">
-            <input type="text" placeholder="Mã Giảm Giá" />
-            <button type="button">Áp Dụng Mã Giảm Giá</button>
-          </div>
-
-          <a href="order.html"
-            ><button class="place-order-button">Đặt Hàng</button></a
-          >
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value="rimel111@gmail.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                value="Kingston, 5236, United State"
+              />
+            </div>
+            <div class="password-changes">
+              <h3>Password Changes</h3>
+              <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <input
+                  type="password"
+                  id="current-password"
+                  name="current-password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new-password" />
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm New Password</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="cancel-btn">Cancel</button>
+              <button type="submit" class="save-btn">Save Changes</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+
+    <!--  -->
 
     <footer class="footer">
       <div class="container footer_container">
@@ -237,6 +195,15 @@
         <div class="footer_item">
           <h3 class="footer_item_titl">Support</h3>
           <ul class="footer_list">
+            <li class="li footer_list_item">Account</li>
+            <li class="li footer_list_item">Login / Register</li>
+            <li class="li footer_list_item">Cart</li>
+            <li class="li footer_list_item">Shop</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
             <li class="li footer_list_item">Privacy policy</li>
             <li class="li footer_list_item">Terms of use</li>
             <li class="li footer_list_item">FAQ's</li>
@@ -250,7 +217,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/cart.js"></script>
+
     <script src="./js/app.js"></script>
   </body>
 </html>

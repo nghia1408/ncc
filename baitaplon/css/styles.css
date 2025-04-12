@@ -811,6 +811,11 @@ ul {
   font-size: 16px;
 }
 
+.place-order-button a {
+  color: inherit; /* Dùng màu chữ của button */
+  text-decoration: none; /* Xóa gạch chân */
+}
+
 /* Cart Items */
 .cart-item,
 .cart-total {
@@ -1309,3 +1314,5 @@ h2 {
     height: 300px;
   }
 }
+
+/* account */
