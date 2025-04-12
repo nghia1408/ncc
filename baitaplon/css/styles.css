@@ -1383,7 +1383,7 @@ h2 {
   background: #fff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   width: 100%;
   transition: box-shadow 0.3s ease;
 }
@@ -1456,7 +1456,7 @@ button {
 
 /* Button Hover Effects */
 .ep-form-actions button:hover {
-  transform: translateY(-2px);  /* Hiệu ứng nâng nhẹ */
+  transform: translateY(-2px); /* Hiệu ứng nâng nhẹ */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1492,3 +1492,5 @@ button {
 .ep-content-section.active {
   display: block;
 }
+
+/* drow menu */
