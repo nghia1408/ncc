@@ -1099,7 +1099,7 @@ h2 {
 
 .auth_img img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -1364,15 +1364,23 @@ h2 {
   margin: 10px 0;
 }
 
-.ep-sidebar li {
-  margin: 8px 0;
-  color: #888;
-  cursor: pointer;
-  transition: color 0.3s ease;
+.ep-sidebar li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.ep-sidebar li.ep-active {
-  color: #e63946;
+.ep-sidebar li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+
+.ep-sidebar li.ep-active a {
+  color: red;
   font-weight: bold;
 }
 
@@ -1422,19 +1430,44 @@ h2 {
 /* Form Styling */
 .ep-form-row {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .ep-form-group {
-  flex: 1;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 500;
+.ep-form-group > label {
+  min-width: 120px;
+  margin-right: 12px;
+  font-weight: 600;
 }
+
+.ep-gender-options {
+  display: flex;
+  gap: 20px;
+}
+
+.ep-gender-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* 👈 cực sát giữa radio và chữ */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ep-gender-options input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #e74c3c;
+  margin: 0; /* 👈 loại bỏ khoảng cách thừa */
+  cursor: pointer;
+}
+
+
 
 input[type="text"],
 input[type="email"],
@@ -1443,7 +1476,7 @@ input[type="password"] {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  background: #f5f5f5;
+ ;
   transition: border-color 0.3s ease;
 }
 
